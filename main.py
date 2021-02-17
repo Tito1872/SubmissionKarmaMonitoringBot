@@ -6,7 +6,7 @@ import praw
 import prawcore
 
 reddit = praw.Reddit("bot")
-subreddit = reddit.subreddit("subredditname")  # put subreddit name here
+subreddit = reddit.subreddit("ScottishFootball")  # put subreddit name here
 
 submission_stream = subreddit.stream.submissions(pause_after=-1, skip_existing=True)
 # These variables are to manage threads as well as sleep timer for exceptions
